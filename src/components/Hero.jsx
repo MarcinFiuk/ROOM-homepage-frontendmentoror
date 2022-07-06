@@ -8,7 +8,7 @@ function Hero() {
         <section className='flex flex-col lg:flex-row '>
             <div className='relative lg:w-3/5 '>
                 <img
-                    src={photos.hero.desktop[0]}
+                    src={photos.hero.mobile[0]}
                     className='w-full h-full'
                     alt=''
                 ></img>
@@ -25,7 +25,7 @@ function Hero() {
                 <h2 className='text-3xl lg:text-4xl font-semibold tracking-negative04 leading-8 '>
                     Discover innovative ways to decorate
                 </h2>
-                <p className='mt-3.5 font-medium text-xs leading-5 text-darkGray'>
+                <p className='mt-3.5 font-medium text-xs md:text-base lg:text-xs leading-5 text-darkGray'>
                     We provide unmatched quality, comfort, and style for
                     property owners across the country. Our experts combine form
                     and function in bringing your vision to life. Create a room
