@@ -1,9 +1,15 @@
-import { photos } from './../data/photos';
+import darkChairs from './../assets/images/image-about-dark.jpg';
+import whiteChair from './../assets/images/image-about-light.jpg';
+
 function About() {
     return (
         <section className='flex flex-col lg:flex-row '>
             <div className=' lg:w-1/3 xl:w-30%'>
-                <img src={photos.about[0]} alt='' className='w-full h-full' />
+                <img
+                    src={darkChairs}
+                    alt='two black chairs'
+                    className='w-full h-full'
+                />
             </div>
             <div className='  lg:w-1/3 xl:w-2/5  py-14 px-8 lg:px-12 lg:py-6 lg:self-center'>
                 <h3 className='font-bold text-xs md:text-2xl lg:text-xs leading-6 text-justify tracking-positive42'>
@@ -20,7 +26,11 @@ function About() {
                 </p>
             </div>
             <div className=' lg:w-1/3 xl:w-30%'>
-                <img src={photos.about[1]} alt='' className='w-full h-full' />
+                <img
+                    src={whiteChair}
+                    alt='white chair'
+                    className='w-full h-full'
+                />
             </div>
         </section>
     );

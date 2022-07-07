@@ -18,11 +18,16 @@ function Header() {
             className='bg-transparent absolute top-0 left-0 z-20 flex md:gap-14
         pt-12 px-6 md:pt-16 md:px-16  w-full lg:w-3/5'
         >
-            <button className='w-1/2 md:hidden' onClick={toggleNavHandler}>
+            <button
+                className='w-1/2 md:hidden'
+                aria-label='open navigation icon'
+                onClick={toggleNavHandler}
+            >
                 <HamburgerIcon />
             </button>
             <h1 className=' -translate-x-2/4 md:translate-x-0 grid place-items-center'>
                 <Logo />
+                {/* Add a tag which redirect us to homepage */}
             </h1>
 
             <div
@@ -31,7 +36,11 @@ function Header() {
             <nav
                 className={`fixed md:static h-28 md:h-auto top-0 left-0 right-0 px-6 md:px-0 sm:px-10 bg-white md:bg-transparent md:text-white  flex gap-16 sm:gap-24 md:gap-14 ${translateFunction} md:translate-y-0 ${transitionTimingFunction} duration-500`}
             >
-                <button className='md:hidden' onClick={toggleNavHandler}>
+                <button
+                    className='md:hidden'
+                    aria-label='close navigation icon'
+                    onClick={toggleNavHandler}
+                >
                     <CloseIcon />
                 </button>
                 <ul className='flex w-full justify-between items-center md:gap-8'>
@@ -50,17 +59,6 @@ function Header() {
                 </ul>
             </nav>
         </header>
-        //
-        //     <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
-        //     <nav>
-        //         <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
-        //             <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html"><span aria-hidden="true">00</span>Home</a>
-        //             <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="destination.html"><span aria-hidden="true">01</span>Destination</a>
-        //             <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="crew.html"><span aria-hidden="true">02</span>Crew</a>
-        //             <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="technology.html"><span aria-hidden="true">03</span>Technology</a>
-        //         </ul>
-        //     </nav>
-        //   </header>
     );
 }
 
