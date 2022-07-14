@@ -39,8 +39,8 @@ function Hero() {
         }
     }, [slideIndex]);
 
-    const calculateTranslate = (axes, howMuch) =>
-        `-translate-${axes}-${howMuch * 100}%`;
+    // const calculateTranslate = (axes, whichEl) =>
+    //     `-translate-${axes}-${whichEl * 100}%`;
 
     const prevSlideHandler = () => {
         setSlideIndex((prev) => prev - 1);
@@ -101,10 +101,10 @@ function Hero() {
             <div className='flex flex-col lg:flex-row '>
                 <div className='relative overflow-hidden lg:w-3/5 '>
                     <div
-                        className={`flex   ${calculateTranslate(
-                            'x',
-                            slideIndex
-                        )} ease-linear  ${
+                        style={{
+                            transform: `translateX(-${slideIndex * 100}%)`,
+                        }}
+                        className={`flex ease-linear  ${
                             stopTransition ? 'transition-none' : 'duration-200'
                         }`}
                     >
@@ -116,10 +116,10 @@ function Hero() {
                 </div>
                 <div className='relative overflow-hidden  lg:w-2/5'>
                     <div
-                        className={`flex lg:min-h-full items-center   ${calculateTranslate(
-                            'x',
-                            slideIndex
-                        )} ease-linear  ${
+                        style={{
+                            transform: `translateX(-${slideIndex * 100}%)`,
+                        }}
+                        className={`flex lg:min-h-full items-center  ease-linear  ${
                             stopTransition ? 'transition-none' : 'duration-200'
                         }`}
                     >
