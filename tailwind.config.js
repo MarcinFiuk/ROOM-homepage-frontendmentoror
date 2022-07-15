@@ -7,7 +7,7 @@ module.exports = {
                 Spartan: ['League Spartan', 'Roboto'],
             },
             colors: {
-                darkGray: 'hsl(0, 0%, 63%)',
+                darkGray: 'hsl(0, 0%, 46%)',
                 veryDarkGray: 'hsl(0, 0%, 27%)',
             },
             spacing: {
@@ -15,11 +15,6 @@ module.exports = {
                 18: '4.5rem',
                 '30%': '30%',
                 '0%': '0',
-                '100%': '100%',
-                '200%': '200%',
-                '300%': '300%',
-                '400%': '400%',
-                '500%': '500%',
             },
             letterSpacing: {
                 extraBig: '0.82em',

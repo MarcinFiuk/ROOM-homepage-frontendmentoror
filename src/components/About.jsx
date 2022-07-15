@@ -9,13 +9,11 @@ function About() {
                 alt='two black chairs'
                 className='lg:w-1/3 xl:w-auto'
             />
-
-            {/* <div className='lg:w-1/3 xl:w-2/5 py-14 px-8 lg:px-12 lg:py-6 lg:self-center'> */}
             <div className='py-14 px-8 lg:px-12 lg:py-6 lg:self-center'>
                 <h3 className='font-bold text-xs md:text-2xl lg:text-xs leading-6 text-justify tracking-positive42'>
                     ABOUT OUR FURNITURE
                 </h3>
-                <p className='font-medium text-xs  md:text-lg lg:text-xs leading-5 tracking-tight text-darkGray mt-2'>
+                <p className='font-medium text-xs md:text-lg lg:text-sm leading-5 tracking-tight text-darkGray mt-2'>
                     Our multifunctional collection blends design and function to
                     suit your individual taste. Make each room unique, or pick a
                     cohesive theme that best express your interests and what
@@ -29,7 +27,7 @@ function About() {
             <img
                 src={whiteChair}
                 alt='white chair'
-                className='lg:w-1/3  xl:w-auto'
+                className='lg:w-1/3 xl:w-auto'
             />
         </section>
     );
