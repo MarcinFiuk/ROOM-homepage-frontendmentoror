@@ -25,9 +25,11 @@ function Header() {
             >
                 <HamburgerIcon />
             </button>
-            <h1 className=' -translate-x-2/4 md:translate-x-0 grid place-items-center'>
+            <h1
+                className='-translate-x-2/4 md:translate-x-0 grid place-items-center'
+                aria-label='Logo of the company: ROOM'
+            >
                 <Logo />
-                {/* Add a tag which redirect us to homepage */}
             </h1>
 
             <div

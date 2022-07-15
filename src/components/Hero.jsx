@@ -75,7 +75,7 @@ function Hero() {
         return (
             <div
                 key={index}
-                className='px-8 lg:px-14 xl:px-24 py-18 lg:py-0 w-full shrink-0 '
+                className='px-8 lg:px-14 xl:px-24 py-18 lg:py-0 lg:pb-4 xl:pb-0 w-full shrink-0 '
             >
                 <h2 className='text-3xl lg:text-4xl font-semibold tracking-negative04 leading-8 '>
                     {title}
@@ -99,7 +99,7 @@ function Hero() {
     return (
         <section>
             <div className='flex flex-col lg:flex-row '>
-                <div className='relative overflow-hidden lg:w-3/5 '>
+                <div className='relative overflow-hidden lg:w-[58.4%] '>
                     <div
                         style={{
                             transform: `translateX(-${slideIndex * 100}%)`,
@@ -114,7 +114,7 @@ function Hero() {
                         {SliderButtonsUpdated}
                     </div>
                 </div>
-                <div className='relative overflow-hidden  lg:w-2/5'>
+                <div className='relative overflow-hidden  lg:w-[41.6%]'>
                     <div
                         style={{
                             transform: `translateX(-${slideIndex * 100}%)`,

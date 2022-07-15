@@ -4,14 +4,14 @@ import whiteChair from './../assets/images/image-about-light.jpg';
 function About() {
     return (
         <section className='flex flex-col lg:flex-row '>
-            <div className=' lg:w-1/3 xl:w-30%'>
-                <img
-                    src={darkChairs}
-                    alt='two black chairs'
-                    className='w-full h-full'
-                />
-            </div>
-            <div className='  lg:w-1/3 xl:w-2/5  py-14 px-8 lg:px-12 lg:py-6 lg:self-center'>
+            <img
+                src={darkChairs}
+                alt='two black chairs'
+                className='lg:w-1/3 xl:w-auto'
+            />
+
+            {/* <div className='lg:w-1/3 xl:w-2/5 py-14 px-8 lg:px-12 lg:py-6 lg:self-center'> */}
+            <div className='py-14 px-8 lg:px-12 lg:py-6 lg:self-center'>
                 <h3 className='font-bold text-xs md:text-2xl lg:text-xs leading-6 text-justify tracking-positive42'>
                     ABOUT OUR FURNITURE
                 </h3>
@@ -25,13 +25,12 @@ function About() {
                     dream space.
                 </p>
             </div>
-            <div className=' lg:w-1/3 xl:w-30%'>
-                <img
-                    src={whiteChair}
-                    alt='white chair'
-                    className='w-full h-full'
-                />
-            </div>
+
+            <img
+                src={whiteChair}
+                alt='white chair'
+                className='lg:w-1/3  xl:w-auto'
+            />
         </section>
     );
 }
