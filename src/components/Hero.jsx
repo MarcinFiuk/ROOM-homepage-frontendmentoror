@@ -55,7 +55,7 @@ function Hero() {
         <SliderButtons next={nextSlideHandler} prev={prevSlideHandler} />
     );
 
-    const changeSlideOnKeyPress = (e) => {
+    const changeSlideOnKeyDown = (e) => {
         if (e.code === 'ArrowLeft') {
             prevSlideHandler();
         }
@@ -115,7 +115,7 @@ function Hero() {
             <div
                 className='flex flex-col lg:flex-row focus:outline-yellow-400'
                 tabIndex='0'
-                onKeyDown={changeSlideOnKeyPress}
+                onKeyDown={changeSlideOnKeyDown}
             >
                 <div className='relative overflow-hidden lg:w-[58.4%]'>
                     <div
