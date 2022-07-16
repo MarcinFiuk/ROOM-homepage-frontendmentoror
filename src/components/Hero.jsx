@@ -47,6 +47,10 @@ function Hero() {
         setSlideIndex((prev) => prev + 1);
     };
 
+    const disableFocus = (visibleSlideIndex, index) => {
+        return visibleSlideIndex !== index ? '-1' : '0';
+    };
+
     const SliderButtonsUpdated = (
         <SliderButtons next={nextSlideHandler} prev={prevSlideHandler} />
     );
@@ -86,6 +90,7 @@ function Hero() {
                 <a
                     href='/'
                     className='inline-block uppercase landing-4 font-medium text-xs tracking-extraBig mt-13 hover:text-darkGray'
+                    tabindex={disableFocus(slideIndex, index)}
                 >
                     shop now
                     <span className='inline-block align-middle ml-11'>
