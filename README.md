@@ -14,12 +14,12 @@ Users should be able to:
 
 ### Screenshot
 
-[Screenshot](./screenshot-ROOM.png)
+![Screenshot](./Screenshot-ROOM.png)
 
 ### Links
 
--   Solution URL: [https://github.com/MarcinFiuk/ROOM-homepage-frontendmentoror](https://your-solution-url.com)
--   Live Site URL: [https://room-homepage-frontendmentoror.vercel.app/](https://your-live-site-url.com)
+-   Solution URL: [GitHub](https://github.com/MarcinFiuk/ROOM-homepage-frontendmentoror)
+-   Live Site URL: [Vercel](https://room-homepage-frontendmentoror.vercel.app/)
 
 ## My process
 
