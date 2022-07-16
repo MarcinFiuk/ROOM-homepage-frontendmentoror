@@ -5,14 +5,14 @@ function SliderButtons({ next, prev }) {
     return (
         <>
             <button
-                className='w-14 lg:w-20 h-14 lg:h-20 bg-black grid place-items-center'
+                className='w-14 lg:w-20 h-14 lg:h-20 bg-black hover:bg-darkGray grid place-items-center transition'
                 aria-label='previous slide'
                 onClick={prev}
             >
                 <IconAngleLeft />
             </button>
             <button
-                className='w-14 lg:w-20 h-14 lg:h-20 bg-black grid place-items-center'
+                className='w-14 lg:w-20 h-14 lg:h-20 bg-black hover:bg-darkGray grid place-items-center transition'
                 aria-label='next slide'
                 onClick={next}
             >

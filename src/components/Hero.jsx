@@ -85,7 +85,7 @@ function Hero() {
                 </p>
                 <a
                     href='/'
-                    className='inline-block uppercase landing-4 font-medium text-xs tracking-extraBig mt-13'
+                    className='inline-block uppercase landing-4 font-medium text-xs tracking-extraBig mt-13 hover:text-darkGray'
                 >
                     shop now
                     <span className='inline-block align-middle ml-11'>

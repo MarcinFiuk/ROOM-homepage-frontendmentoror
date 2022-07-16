@@ -44,18 +44,38 @@ function Header() {
                 >
                     <CloseIcon />
                 </button>
-                <ul className='flex w-full justify-between items-center md:gap-8'>
+                <ul className='flex w-full justify-between items-center md:gap-8 transition-colors duration-500'>
                     <li>
-                        <a href='/'>home</a>
+                        <a
+                            href='/'
+                            className='border-solid border-b-2 border-transparent hover:border-white transition-colors duration-300'
+                        >
+                            home
+                        </a>
                     </li>
                     <li>
-                        <a href='/'>shop</a>
+                        <a
+                            href='/'
+                            className='border-solid border-b-2 border-transparent hover:border-white transition-colors duration-300'
+                        >
+                            shop
+                        </a>
                     </li>
                     <li>
-                        <a href='/'>about</a>
+                        <a
+                            href='/'
+                            className='border-solid border-b-2 border-transparent hover:border-white transition-colors duration-300'
+                        >
+                            about
+                        </a>
                     </li>
                     <li>
-                        <a href='/'>contact</a>
+                        <a
+                            href='/'
+                            className='border-solid border-b-2 border-transparent hover:border-white transition-colors duration-300'
+                        >
+                            contact
+                        </a>
                     </li>
                 </ul>
             </nav>
