@@ -55,6 +55,15 @@ function Hero() {
         <SliderButtons next={nextSlideHandler} prev={prevSlideHandler} />
     );
 
+    const changeSlideOnKeyPress = (e) => {
+        if (e.code === 'ArrowLeft') {
+            prevSlideHandler();
+        }
+        if (e.code === 'ArrowRight') {
+            nextSlideHandler();
+        }
+    };
+
     const photoSlider = slideArr.map((slide, index) => {
         const { mobilePhoto, desktopPhoto, alt } = slide;
         return (
@@ -90,7 +99,7 @@ function Hero() {
                 <a
                     href='/'
                     className='inline-block uppercase landing-4 font-medium text-xs tracking-extraBig mt-13 hover:text-darkGray'
-                    tabindex={disableFocus(slideIndex, index)}
+                    tabIndex={disableFocus(slideIndex, index)}
                 >
                     shop now
                     <span className='inline-block align-middle ml-11'>
@@ -103,7 +112,11 @@ function Hero() {
 
     return (
         <section>
-            <div className='flex flex-col lg:flex-row '>
+            <div
+                className='flex flex-col lg:flex-row focus:outline-yellow-400'
+                tabIndex='0'
+                onKeyDown={changeSlideOnKeyPress}
+            >
                 <div className='relative overflow-hidden lg:w-[58.4%]'>
                     <div
                         style={{
